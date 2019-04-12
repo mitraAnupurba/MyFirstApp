@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity">
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ENTER EMAIL"
+        android:layout_centerInParent="true"
+        android:id="@+id/signup_email_address_editText"
+        android:textSize="30sp"
+        android:textAlignment="center"
+
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="ENTER PASSWORD"
+        android:layout_centerInParent="true"
+        android:id="@+id/signup_password_editText"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:layout_below="@+id/signup_email_address_editText"
+
+
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/signup_button"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/signup_password_editText"
+        android:text="SIGNUP"
+        android:textSize="30sp"
+        android:layout_centerInParent="true"
+        android:textAlignment="center"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:id="@+id/login_text_view"
+        android:text="have an account? login here"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/signup_button"
+        android:clickable="true"/>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/login_text_view"
+        />
+
+</RelativeLayout>
